@@ -1,11 +1,6 @@
 {
   "name": "Python Quantum playground",
-  "image": "mcr.microsoft.com/devcontainers/python:0-3.11-bullseye",
-  "features": {
-    "ghcr.io/devcontainers/features/sshd:1": {
-      "version": "latest"
-    }
-  },
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
   "customizations": {
     "codespaces": {
       "openFiles": [
@@ -27,6 +22,8 @@
         "ms-python.python"
       ]
     },
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "python3 -m pip install -r requirements.txt",
     "postStartCommand": "bash -c .devcontainer/setup.sh"
   }
 }
