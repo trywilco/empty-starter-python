@@ -19,8 +19,7 @@
         "ms-toolsai.jupyter",
         "ms-python.python"
       ]
-    },
-    "postCreateCommand": "pip install --user -r requirements.txt",
-    "postStartCommand": "bash -c .devcontainer/setup.sh"
-  }
+    }
+  },
+  "postStartCommand": "bash -c .devcontainer/setup.sh"
 }
