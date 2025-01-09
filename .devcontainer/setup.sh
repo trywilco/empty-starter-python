@@ -6,4 +6,4 @@ export ENGINE_EVENT_ENDPOINT="${ENGINE_BASE_URL}/users/${WILCO_ID}/event"
 # Update engine that codespace started for user
 curl -L -X POST "${ENGINE_EVENT_ENDPOINT}" -H "Content-Type: application/json" --data-raw "{ \"event\": \"github_codespace_started\" }"
 
-python3 -m pip install -r requirements.txt
+python -m pip install -r ../requirements.txt
