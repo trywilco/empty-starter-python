@@ -3,9 +3,7 @@
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "customizations": {
     "codespaces": {
-      "openFiles": [
-        "swap_test.ipynb"
-      ]
+      "openFiles": []
     },
     "vscode": {
       "settings": {
@@ -22,8 +20,7 @@
         "ms-python.python"
       ]
     },
-    "waitFor": "onCreateCommand",
-    "updateContentCommand": "python3 -m pip install -r requirements.txt",
+    "postCreateCommand": "pip install --user -r requirements.txt",
     "postStartCommand": "bash -c .devcontainer/setup.sh"
   }
 }
