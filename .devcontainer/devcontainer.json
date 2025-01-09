@@ -7,6 +7,11 @@
     }
   },
   "customizations": {
+    "codespaces": {
+      "openFiles": [
+        "swap_test.ipynb"
+      ]
+    },
     "vscode": {
       "settings": {
         "extensions.ignoreRecommendations": true,
@@ -17,12 +22,10 @@
         "workbench.welcomePage.experimental.videoTutorials": "off",
         "github.codespaces.defaultExtensions": []
       },
-      "vscode": {
-        "extensions": [
-          "ms-toolsai.jupyter",
-          "ms-python.python"
-        ]
-      }
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-python.python"
+      ]
     },
     "postStartCommand": "bash -c .devcontainer/setup.sh"
   }
