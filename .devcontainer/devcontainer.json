@@ -6,14 +6,24 @@
       "version": "latest"
     }
   },
-  "settings": {
-    "extensions.ignoreRecommendations": true,
-    "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Visual Studio Dark",
-    "workbench.colorCustomizations": {},
-    "workbench.welcomePage.walkthroughs.openOnInstall": false,
-    "workbench.welcomePage.experimental.videoTutorials": "off",
-    "github.codespaces.defaultExtensions": []
-  },
-  "postStartCommand": "bash -c .devcontainer/setup.sh"
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "extensions.ignoreRecommendations": true,
+        "workbench.startupEditor": "none",
+        "workbench.colorTheme": "Visual Studio Dark",
+        "workbench.colorCustomizations": {},
+        "workbench.welcomePage.walkthroughs.openOnInstall": false,
+        "workbench.welcomePage.experimental.videoTutorials": "off",
+        "github.codespaces.defaultExtensions": []
+      },
+      "vscode": {
+        "extensions": [
+          "ms-toolsai.jupyter",
+          "ms-python.python"
+        ]
+      }
+    },
+    "postStartCommand": "bash -c .devcontainer/setup.sh"
+  }
 }
