@@ -1,3 +1,0 @@
-import classiq
-
-classiq.authenticate()
